@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 .idea/
 
+snippets/migrations
+scm/settings.credential.py
+
 # C extensions
 *.so
 
