@@ -5,7 +5,7 @@ __pycache__/
 .idea/
 
 snippets/migrations
-scm/settings.credential.py
+scm/local_settings.py
 
 # C extensions
 *.so
