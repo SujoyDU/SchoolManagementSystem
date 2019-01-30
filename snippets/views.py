@@ -2,7 +2,7 @@ from rest_framework import generics
 from .models import Snippet
 from .serializers import SnippetSerializer, UserSerializer
 from rest_framework import viewsets
-from django.contrib.auth.models import User
+from users.models import CustomUser
 from rest_framework import generics, permissions
 from .permissions import IsOwnerOrReadOnly
 
@@ -15,6 +15,6 @@ class SnippetViewSet(viewsets.ModelViewSet):
 
 class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
-    queryset = User.objects.all()
+    queryset = CustomUser.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 

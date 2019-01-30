@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'snippets'
+    'snippets',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -48,6 +49,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'scm.urls'
+AUTH_USER_MODEL = 'users.customUser'
 
 TEMPLATES = [
     {
