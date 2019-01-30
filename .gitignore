@@ -4,8 +4,10 @@ __pycache__/
 *$py.class
 .idea/
 
+management/migrations
 snippets/migrations
 scm/local_settings.py
+users/migrations
 
 # C extensions
 *.so
